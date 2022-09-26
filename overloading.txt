@@ -1,0 +1,171 @@
+inheritance: inheritance is the process by which one object can acquire the properties of another object.
+ advanatge: code reusabilty.
+ how to achieve this inheritence is using extends keyword.
+ example:
+  class A{
+  //data
+  //methods
+  
+  }
+  
+  class B extends A{
+  
+  // A data+ A methods
+  
+  // B data
+  
+  // B methods
+ 
+ }
+ 
+ GSH India pvt ltd
+ 
+ 
+ Inheritance types :
+ 1. single 
+ 2. mulit-level
+ 3. multiple
+ 4. hierarichal
+ 5. hybrid
+ 
+ 1. another name for inheritance is called is -a relationship.
+ 
+ class Pet{
+ 
+ }
+ 
+ class Dog extends Pet{ }
+ 
+ class Cat extends Pet{ }
+ 
+ Dog is a Pet
+ Cat is a Pet
+ 
+  1. single : If a class can extend only one parent class is called single inheritance.
+  
+  A
+  |
+  B
+  
+  class A {
+  
+  }
+  
+  class B extends A{
+  
+  }
+  
+ 2. mulit-level 
+ 
+	A
+	|
+	B
+	|
+	C
+ 
+ 3. multiple inheritance
+ 
+ if  a class can exend more than one class at a time then its called multiple inheritance.
+ 
+   A     B
+   |____|
+       |
+	   C
+Java doesnot support multiple inheritance. 
+
+A ---> method1()
+B ---> method1()
+ class C exends A,B{
+	main(){
+	 C c= new C();
+	  c.method1(); //ambiguity for compile which class method to call 
+	}
+ }
+ we cant achieve multiple inheritance in java through classes.
+ But we can achieve through interfaces.
+ In Java a Class cannot extend multiple classes.if we extend so will get compile time error.
+ 
+ Hierarichal Inheritance:
+			A
+	____|____
+	|		|		|
+	B     C      D
+	 
+ Only one parent class will be there using that we can create any no of child classes.
+ 
+ Hybrid Inheritance: It is a combination of single and multiple inheritance.
+ 
+   __A__
+   |        | 
+   |		|  
+   B      C
+   |____|
+       |
+	   D
+  
+  Polymorphism:
+  poly= many
+  morphism=forms
+  one task can be perfromed in different ways.
+  
+  2 types of polymorphisms:
+  1. compiletime (overloading)
+  2. runtime (overriding)
+  
+  overloading
+  ==========
+  writing multiple methods with the same name with in the same class  but  with different arguements.
+  
+  class Addition{
+   
+   public int add (int a, int b){
+      return a+b;
+   }
+   
+   public int add (int a, int b,int c){
+      return a+b+c;
+   }
+   
+   public int add (int a, int b,int c,int d){
+      return a+b+c+d;
+   }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
